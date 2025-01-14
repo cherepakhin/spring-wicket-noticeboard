@@ -70,3 +70,11 @@ echo $JAVA_HOME
 Проверить, что свободен порт 8080.
 
 http://127.0.0.1:8080/
+
+Экран входа:
+
+![notice_board](doc/notice_board.png)
+
+Управление сообщениями:
+
+![manage_board_manage](doc/manage_board_manage.png)
