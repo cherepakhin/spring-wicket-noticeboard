@@ -1,5 +1,5 @@
 # Apache WICKET with SPRING boot example application: notice board
-[https://github.com/saladlam/spring-wicket-noticeboard](https://github.com/saladlam/spring-wicket-noticeboard)
+Оригинальный проект [https://github.com/saladlam/spring-wicket-noticeboard](https://github.com/saladlam/spring-wicket-noticeboard)
 
 ## Objective
 I am writing this application for studying Apache wicket MVC framework.
