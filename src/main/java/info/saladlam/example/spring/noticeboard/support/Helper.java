@@ -6,6 +6,8 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 
+import static java.lang.String.format;
+
 public abstract class Helper {
 
 	private static final Logger log = LoggerFactory.getLogger(Helper.class);
@@ -18,7 +20,11 @@ public abstract class Helper {
 		EmbeddedDatabaseBuilder db = Helper.getEmbeddedDatabaseBuilder(name)
 			.setScriptEncoding("UTF-8")
 			.addScript("classpath:/sql/dbschema.sql");
-		log.info("getEmbeddedDatabase %s", name);
+		log.info("EmbeddedDatabase.getEmbeddedDatabase name={}", name);
+		log.info("EmbeddedDatabase.getEmbeddedDatabase addScripts");
+		for (String script :addScripts ) {
+			log.info("EmbeddedDatabase scripts={}", script);
+		}
 		for (String script : addScripts) {
 			db.addScript(script);
 		}
@@ -26,6 +32,8 @@ public abstract class Helper {
 	}
 
 	public static EmbeddedDatabaseBuilder getEmbeddedDatabaseBuilder(String name) {
+		log.info(format("getEmbeddedDatabaseBuilder %s", name));
+		log.info("EmbeddedDatabase name={}", name);
 		return new EmbeddedDatabaseBuilder()
 				.setType(EmbeddedDatabaseType.H2)
 				.setName(name);

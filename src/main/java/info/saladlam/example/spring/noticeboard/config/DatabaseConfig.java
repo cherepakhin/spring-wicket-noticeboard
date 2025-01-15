@@ -16,7 +16,6 @@ public class DatabaseConfig {
 
 	@Bean
 	@Profile("!test")
-//	@Profile("test")
 	public DataSource dataSource() {
 		LOGGER.info("INIT DATABASE");
 		return Helper.getEmbeddedDatabaseBuilder("noticeboard").build();

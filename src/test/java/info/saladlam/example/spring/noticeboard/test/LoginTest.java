@@ -41,7 +41,7 @@ class LoginTest {
 	@TestConfiguration
 	public static class LoginTestContextConfiguration {
 
-		// Определение бина для теста Spring Boot
+		// Определение бина DataSource для теста Spring Boot
 		@Bean
 		public DataSource testDataSource() {
 			return Helper.getEmbeddedDatabaseBuilder(LoginTest.class.getName()).build();
