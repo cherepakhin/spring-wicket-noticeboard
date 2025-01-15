@@ -78,3 +78,14 @@ http://127.0.0.1:8080/
 Управление сообщениями:
 
 ![manage_board_manage](doc/manage_board_manage.png)
+
+### Тестирование
+
+Подключен контроль покрытия тестами. Сделано с помощью [jacoco](https://www.jacoco.org/jacoco/). Отчет генерируется автоматически при прогоне тестов или:
+
+````shell
+./mvnw jacoco:report
+````
+
+Отчет в consumer/target/site/jacoco/index.html
+![jacoco_report.png](doc/jacoco_report.png)
