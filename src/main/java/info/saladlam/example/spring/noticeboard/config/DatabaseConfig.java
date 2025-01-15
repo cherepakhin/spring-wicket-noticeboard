@@ -12,6 +12,7 @@ public class DatabaseConfig {
 
 	@Bean
 	@Profile("!test")
+//	@Profile("test")
 	public DataSource dataSource() {
 		return Helper.getEmbeddedDatabaseBuilder("noticeboard").build();
 	}
