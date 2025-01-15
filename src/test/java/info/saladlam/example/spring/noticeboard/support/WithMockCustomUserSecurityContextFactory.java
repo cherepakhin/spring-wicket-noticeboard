@@ -17,7 +17,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Copy from org.springframework.security.test.context.support.WithMockUserSecurityContextFactory and customize.
+ * Copy from
+ * org.springframework.security.test.context.support.WithMockUserSecurityContextFactory
+ * and customize.
  */
 final class WithMockCustomUserSecurityContextFactory implements WithSecurityContextFactory<WithMockCustomUser> {
 
