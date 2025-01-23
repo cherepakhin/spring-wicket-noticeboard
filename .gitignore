@@ -32,3 +32,4 @@ build/
 log.txt
 .gigaide/
 logs/
+.gigaide/gigaide.properties
